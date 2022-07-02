@@ -1,8 +1,15 @@
-void main() {
-  print("Asignment : 3");
-  print("Welcome to FLutter Training");
-  print("Kuhoo Saxena");
-  print("Creating Git Repositry(Flutter_PractiseCode) using VSCode");
+// ignore_for_file: prefer_const_constructors
 
-  print("Saving Updated Changes");
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_app/certify.dart';
+import 'package:flutter_app/login.dart';
+import 'package:flutter_app/start.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: Screen0(),
+    // home: login(),
+    // home: certify(),
+  ));
 }

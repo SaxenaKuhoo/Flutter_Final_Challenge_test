@@ -6,9 +6,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:intl/intl.dart';
 
 class certify extends StatefulWidget {
-  final String text;
-  const certify({Key? key, required this.text}) : super(key: key);
-
+  const certify({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<certify> createState() => _certifyState();
 }
@@ -38,7 +37,7 @@ class _certifyState extends State<certify> {
             height: 10,
           ),
           Text(
-            "Hi $this",
+            "Hi ${widget.title}",
             style: TextStyle(
               fontSize: 26,
             ),

@@ -95,7 +95,7 @@ class _loginState extends State<login> {
                     if (_nameError == null) {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return certify(text: _nameController.text);
+                        return certify(title: _nameController.text);
                       }));
                     }
                   },

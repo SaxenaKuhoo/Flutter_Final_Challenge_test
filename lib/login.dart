@@ -13,6 +13,7 @@ class login extends StatefulWidget {
 
 class _loginState extends State<login> {
   String? name = null;
+  String? email = null;
   String? _nameError = null;
   String? _emailError = null;
   TextEditingController _nameController = TextEditingController();
@@ -88,12 +89,10 @@ class _loginState extends State<login> {
                       else {
                         name = _nameController.text;
                       }
-                      if (_emailController.text.length <= 1)
-                        _nameError = "Enter email-id";
                       print(name);
                     });
 
-                    if (_nameError == null && _emailError == null) {
+                    if (_nameError == null) {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
                         return certify(text: _nameController.text);

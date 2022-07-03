@@ -38,7 +38,7 @@ class _certifyState extends State<certify> {
             height: 10,
           ),
           Text(
-            "Hi $this.name",
+            "Hi $this",
             style: TextStyle(
               fontSize: 26,
             ),
